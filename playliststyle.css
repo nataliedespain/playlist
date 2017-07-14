@@ -79,19 +79,50 @@ body {
     height: 300px;
     margin: 0 auto;
     margin-top: 3%;
+    display: flex;
   }
 
     .body .bin-container .box {
+      height: 100%;
+      padding: 30px;
+      width: 30%;
+    }
+
+    .body .bin-container .box .current-album-image {
+      background: white;
+      height: 100px;
+      width: 100px;
+      margin: 20px 0;
+    }
+
+    .body .bin-container .album-tracks {
       background: #EEEEEE;
       height: 100%;
       overflow-y: scroll;
       padding: 30px;
       border: 3px solid #353526;
+      width: 30%
+    }
+
+    .body .bin-container .arrow {
+      background: white;
+      height: 100%;
+      width: 9%
+    }
+
+    .body .bin-container .playlist-tracks {
+      background: #EEEEEE;
+      height: 100%;
+      overflow-y: scroll;
+      padding: 30px;
+      border: 3px solid #353526;
+      width: 30%
     }
 
       .body .bin-container h6 {
         margin-bottom: 10px;
       }
+
 
     .body .button-container {
       height: 100%;
