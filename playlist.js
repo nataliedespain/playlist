@@ -44,8 +44,10 @@ $(document).ready(function() {
 
     // ADD SONG TO PLAYLIST
     $('.album-tracks').click(function(e){
-      var song = $(`<h6>${e.target.innerText}</span></h6>`);
-      $('.playlist-tracks').append(song);
+      if (e.target.localName === 'h6') {
+        var song = $(`<h6>${e.target.innerText}</span></h6>`);
+        $('.playlist-tracks').append(song);
+      }
     })
 
   }});
