@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/AvenirNextLTPro-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir";
+}
+
+
+.container {
+  width: 100%;
+  background: white;
+}
+
+
+.header {
+  width: 100vw;
+  height: 60px;
+  background: #9B9B8C;
+  border-bottom: 2px #353526 solid;
+}
+
+
+/*CONTENT*/
+.body {
+  width: 100%;
+  height: 750px;
+  background: #EEEEEE;
+  display: flex;
+}
+
+  .body .left {
+    width: 50%;
+    height: 100%;
+  }
+
+    .body .left .left-container {
+      width: 50%;
+      margin: auto;
+      margin-top: 35%;
+      text-align: center;
+    }
+
+      .body .left .left-container h1 {
+        color: #4A0064;
+        font-size: 4em;
+        font-weight: 300;
+        letter-spacing: 3px;
+      }
+
+      .body .left .left-container button {
+        font-family: "Avenir";
+        margin: 30px auto;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        background: #353526;
+        padding: 12px 43px;
+        color: white;
+        border-radius: 10px;
+        transition: 0.3s ease all;
+      }
+
+      .body .left .left-container button:hover {
+        background: rgba(54, 54, 38, 0.82);
+        cursor: pointer;
+      }
+
+  .body .right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+
+    .body .right-overlay {
+      background: url('resources/track.jpg') no-repeat center;
+      background-size: cover;
+      filter: alpha(opacity=19);
+      width: 100%;
+      height: 100%;
+      -moz-opacity: 0.19;
+      opacity: 0.19;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .body .right-container {
+      position: absolute;
+    }
+
+      .body .right .right-container {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .body .right .right-container > div {
+        margin: 0 auto;
+        width: 220px;
+        height: 220px;
+        background: white;
+        margin-top: 2.7%;
+      }
+
+
+/*FOOTER*/
+.footer {
+  width: 100vw;
+  height: 50px;
+  background: #686859;
+}
+
+  .footer h6 {
+    color: white;
+    padding: 1% 5% 0 5%;
+    font-weight: 100;
+    font-size: 1.2em;
+  }
